@@ -1,22 +1,26 @@
 <a name="top"></a>
 
-<section class="article">  
+<section class="article">
   <h2 class="article-title">
-    <%- page.title %> 
+    <%- page.title %>
   </h2>
   <p class="article-date">
-    <%- date(page.date, 'YYYY/M/D') %> 
+    <%- date(page.date, 'YYYY/M/D') %>
   </p>
 
   <hr class="hr-divide">
 
   <div class="article-content">
-    <%- page.content %> 
+    <% if (page.featured_image) { %>
+      <img class="featured-img" src="<% page.featured_image %>" title="<% page.featured_image_title %>" alt="<% page.featured_image_title %>">
+    <% } %>
+
+    <%- page.content %>
     <hr class="hr-divide">
     <div class="article-footer">
       <a href="#top">back to top</a>
     </div>
   </div>
 
-  
+
 </section>

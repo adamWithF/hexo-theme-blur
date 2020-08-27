@@ -37,7 +37,7 @@ body {
   position: relative;
   margin-top: 50px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 .avatar {
@@ -68,7 +68,7 @@ body {
 }
 
 .sidebar-title:hover {
-  filter: blur(2px);
+  /* filter: blur(2px); */
 }
 
 
@@ -94,10 +94,15 @@ li a:hover {
   text-decoration: none;
 }
 
+#nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
 
 /* the styles of header */
 #nav > .header {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 10px;
 }
 
@@ -112,10 +117,13 @@ li a:hover {
 #nav > .header > .header-title:hover {
   color: #ff9966;
   text-decoration: none;
-  filter: blur(2px);
+  /* filter: blur(2px); */
   /* transform: scale(1.1); */
 }
 
+#nav .icons a {
+  text-decoration: none;
+}
 
 .icons {
   text-align: right;
@@ -131,8 +139,8 @@ li a:hover {
 .fa:hover {
   font-size: 40px;
   line-height: 20px;
-  color: #ff9966;
-  filter: blur(1.5px);
+  /* color: #ff9966; */
+  /* filter: blur(1.5px); */
   transform: scale(1.1);
 }
 
@@ -207,7 +215,7 @@ li a:hover {
 @media screen and (max-width: 600px) {
   .blog-excerpt {
     flex-direction: column;
-  } 
+  }
 }
 
 .excerpt {
@@ -218,7 +226,7 @@ li a:hover {
 .blog-excerpt .excerpt-wrapper {
   padding: 80px 100px;
   margin: 40px 0;
-  background-color: #eff0f6;
+  /* background-color: #eff0f6; */
   flex: 1;
   margin-right: 10px;
   margin-left: 10px;
@@ -235,7 +243,7 @@ li a:hover {
 
 .blog-excerpt > .excerpt-wrapper > .title:hover {
   text-decoration: none;
-  filter: blur(1.5px);
+  /* filter: blur(1.5px); */
   transform: scale(1.1);
 }
 
@@ -248,7 +256,7 @@ li a:hover {
 
   width: 320px;
   height: 280px;
-  
+
   margin-right: 10px;
   margin-left: 10px;
 
@@ -267,18 +275,17 @@ li a:hover {
   width: 100%;
   height: 100%;
   margin: 12px;
-  filter: blur(2px);
+  /* filter: blur(2px); */
   transform: scale(1.05);
 }
-
 
 /* The styles of the post page */
 .article {
   margin: 64px 0 80px;
   padding: 80px 100px 0;
-  background-color: #f2ebda;
+  /* background-color: #f2ebda; */
   color: #333;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -290,8 +297,8 @@ li a:hover {
 }
 
 .article > .article-title {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 50px;
+  line-height: 1.1;
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -323,8 +330,13 @@ li a:hover {
 
 .article-content > .article-footer > a:hover {
   text-decoration: none;
-  filter: blur(1.5px);
+  /* filter: blur(1.5px); */
   transform: scale(1.2);
+}
+
+.article-content .featured-img {
+  display: block;
+  margin: auto;
 }
 
 /* The styles of the footer */
@@ -339,23 +351,54 @@ li a:hover {
 }
 
 .footer a {
-  color: #ff9966;
+  /* color: #ff9966; */
   text-decoration: underline;
 }
 
 .footer a:hover {
-  color: #ff9966;
+  /* color: #ff9966; */
   text-decoration: none;
-  filter: blur(1.8px);
+  /* filter: blur(1.8px); */
+}
+
+.footer .social-media {
+  display: flex;
+}
+
+.footer .social-media a ~ a {
+  margin-left: 20px;
+}
+
+.footer .social-media i:before {
+  width: 50px;
+  height: 50px;
+  /* color: red; */
+}
+
+.powered-by {
+  margin-top: 20px;
+  color: #333;
+}
+
+.build-with {
+  color: #333;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-twitter {
+  color: 1da1f2;
 }
 
 /* The styles of the pagination */
 .pager {
   margin-left: 10px;
-  background-color: #eff0f6;
+  /* background-color: #eff0f6; */
   font-size: 25px;
   padding-left: 30px;
-  padding-right: 20px; 
+  padding-right: 20px;
   justify-content: space-between;
 }
 
@@ -391,7 +434,7 @@ li a:hover {
 .archive-item a:hover {
   color: #ff9966;
   text-decoration: none;
-  filter: blur(1.5px);
+  /* filter: blur(1.5px); */
 }
 
 .archive-item span {
